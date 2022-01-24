@@ -8,16 +8,16 @@ import (
 
 // IncludedTaskfile represents information about included tasksfile
 type IncludedTaskfile struct {
-	Taskfile       string
-	Dir            string
-	Optional       bool
-	AdvancedImport bool
+	Taskfile       string `json:"taskfile,omitempty"`
+	Dir            string `json:"dir,omitempty"`
+	Optional       bool   `json:"optional,omitempty"`
+	AdvancedImport bool   `json:"advancedImport,omitempty"`
 }
 
 // IncludedTaskfiles represents information about included tasksfiles
 type IncludedTaskfiles struct {
-	Keys    []string
-	Mapping map[string]IncludedTaskfile
+	Keys    []string                    `json:"keys,omitempty"`
+	Mapping map[string]IncludedTaskfile `json:"mapping,omitempty"`
 }
 
 // UnmarshalYAML implements the yaml.Unmarshaler interface.

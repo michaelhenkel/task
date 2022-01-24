@@ -2,18 +2,18 @@ package taskfile
 
 // Cmd is a task command
 type Cmd struct {
-	Cmd         string
-	Silent      bool
-	Task        string
-	Vars        *Vars
-	IgnoreError bool
-	Defer       bool
+	Cmd         string `json:"cmd,omitempty"`
+	Silent      bool   `json:"silent,omitempty"`
+	Task        string `json:"task,omitempty"`
+	Vars        *Vars  `json:"vars,omitempty"`
+	IgnoreError bool   `json:"ignoreError,omitempty"`
+	Defer       bool   `json:"defer,omitempty"`
 }
 
 // Dep is a task dependency
 type Dep struct {
-	Task string
-	Vars *Vars
+	Task string `json:"task,omitempty"`
+	Vars *Vars  `json:"vars,omitempty"`
 }
 
 // UnmarshalYAML implements yaml.Unmarshaler interface

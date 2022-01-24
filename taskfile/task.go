@@ -5,25 +5,25 @@ type Tasks map[string]*Task
 
 // Task represents a task
 type Task struct {
-	Task          string
-	Cmds          []*Cmd
-	Deps          []*Dep
-	Label         string
-	Desc          string
-	Summary       string
-	Sources       []string
-	Generates     []string
-	Status        []string
-	Preconditions []*Precondition
-	Dir           string
-	Vars          *Vars
-	Env           *Vars
-	Silent        bool
-	Interactive   bool
-	Method        string
-	Prefix        string
-	IgnoreError   bool
-	Run           string
+	Task          string          `json:"task,omitempty"`
+	Cmds          []*Cmd          `json:"cmds,omitempty"`
+	Deps          []*Dep          `json:"deps,omitempty"`
+	Label         string          `json:"label,omitempty"`
+	Desc          string          `json:"desc,omitempty"`
+	Summary       string          `json:"summary,omitempty"`
+	Sources       []string        `json:"sources,omitempty"`
+	Generates     []string        `json:"generates,omitempty"`
+	Status        []string        `json:"status,omitempty"`
+	Preconditions []*Precondition `json:"preconditions,omitempty"`
+	Dir           string          `json:"dir,omitempty"`
+	Vars          *Vars           `json:"vars,omitempty"`
+	Env           *Vars           `json:"env,omitempty"`
+	Silent        bool            `json:"silent,omitempty"`
+	Interactive   bool            `json:"interactive,omitempty"`
+	Method        string          `json:"method,omitempty"`
+	Prefix        string          `json:"prefix,omitempty"`
+	IgnoreError   bool            `json:"ignoreError,omitempty"`
+	Run           string          `json:"run,omitempty"`
 }
 
 func (t *Task) Name() string {
