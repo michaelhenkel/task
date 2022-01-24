@@ -2,7 +2,7 @@ module github.com/michaelhenkel/task/v3
 
 require (
 	github.com/fatih/color v1.13.0
-	github.com/michaelhenkel/slim-sprig v0.0.0-20210107165309-348f09dbbbc0
+	github.com/go-task/slim-sprig v0.0.0-20210107165309-348f09dbbbc0
 	github.com/joho/godotenv v1.4.0
 	github.com/mattn/go-zglob v0.0.3
 	github.com/mitchellh/hashstructure/v2 v2.0.2

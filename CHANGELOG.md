@@ -151,7 +151,7 @@
 
 - Fixed some bugs and regressions regarding dynamic variables and directories
   ([#426](https://github.com/michaelhenkel/task/issues/426)).
-- The [slim-sprig](https://github.com/michaelhenkel/slim-sprig) package was updated
+- The [slim-sprig](https://github.com/go-task/slim-sprig) package was updated
   with the upstream [sprig](https://github.com/Masterminds/sprig).
 
 ## v3.2.0 - 2021-01-07
@@ -228,7 +228,7 @@
   This is useful for manual checking when using external, or even remote,
   artifacts when using `status:`
   ([#216](https://github.com/michaelhenkel/task/pull/216)).
-- We're now using [slim-sprig](https://github.com/michaelhenkel/slim-sprig) instead of
+- We're now using [slim-sprig](https://github.com/go-task/slim-sprig) instead of
   [sprig](https://github.com/Masterminds/sprig), which allowed a file size
   reduction of about 22%
   ([#219](https://github.com/michaelhenkel/task/pull/219)).

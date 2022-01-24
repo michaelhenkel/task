@@ -6,7 +6,7 @@ import (
 	"strings"
 	"text/template"
 
-	sprig "github.com/michaelhenkel/slim-sprig"
+	sprig "github.com/go-task/slim-sprig"
 	"mvdan.cc/sh/v3/syntax"
 )
 
