@@ -134,11 +134,7 @@ func (e *Executor) compiledTask(call taskfile.Call, evaluateShVars bool) (*taskf
 
 	if len(origTask.Status) > 0 {
 		for _, checker := range []status.Checker{e.timestampChecker(&new), e.checksumChecker(&new)} {
-			value, err := checker.Value()
-			if err != nil {
-				return nil, err
-			}
-			vars.Set(strings.ToUpper(checker.Kind()), taskfile.Var{Live: value})
+			vars.Set(strings.ToUpper(checker.Kind()), taskfile.Var{})
 		}
 
 		// Adding new variables, requires us to refresh the templaters

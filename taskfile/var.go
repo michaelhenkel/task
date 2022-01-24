@@ -77,11 +77,8 @@ func (vs *Vars) ToCacheMap() (m map[string]interface{}) {
 			return nil
 		}
 
-		if v.Live != nil {
-			m[k] = v.Live
-		} else {
-			m[k] = v.Static
-		}
+		m[k] = v.Static
+
 		return nil
 	})
 	return
@@ -97,10 +94,9 @@ func (vs *Vars) Len() int {
 
 // Var represents either a static or dynamic variable.
 type Var struct {
-	Static string      `json:"static,omitempty"`
-	Live   interface{} `json:"live,omitempty"`
-	Sh     string      `json:"sh,omitempty"`
-	Dir    string      `json:"dir,omitempty"`
+	Static string `json:"static,omitempty"`
+	Sh     string `json:"sh,omitempty"`
+	Dir    string `json:"dir,omitempty"`
 }
 
 // UnmarshalYAML implements yaml.Unmarshaler interface.

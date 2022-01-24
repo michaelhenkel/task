@@ -71,7 +71,6 @@ func (r *Templater) ReplaceVars(vars *taskfile.Vars) *taskfile.Vars {
 	vars.Range(func(k string, v taskfile.Var) error {
 		new.Set(k, taskfile.Var{
 			Static: r.Replace(v.Static),
-			Live:   v.Live,
 			Sh:     r.Replace(v.Sh),
 		})
 		return nil
