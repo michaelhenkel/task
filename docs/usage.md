@@ -652,7 +652,7 @@ commands are executed in the reverse order if you schedule multiple of them.
 Task parse commands as [Go's template engine][gotemplate] before executing
 them. Variables are accessible through dot syntax (`.VARNAME`).
 
-All functions by the Go's [slim-sprig lib](https://go-task.github.io/slim-sprig/)
+All functions by the Go's [slim-sprig lib](https://michaelhenkel.github.io/slim-sprig/)
 are available. The following example gets the current date in a given format:
 
 ```yaml

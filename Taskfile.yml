@@ -66,7 +66,7 @@ tasks:
   gen-install-script:
     desc: Generate install script using https://github.com/goreleaser/godownloader
     cmds:
-      - godownloader --repo go-task/task -o install-task.sh
+      - godownloader --repo michaelhenkel/task -o install-task.sh
       - cp ./install-task.sh ./docs/install.sh
 
   ci:

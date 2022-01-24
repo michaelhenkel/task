@@ -44,7 +44,7 @@ checksum:
 
 nfpms:
   - vendor: Task
-    homepage: https://github.com/go-task/task
+    homepage: https://github.com/michaelhenkel/task
     maintainer: Andrey Nering <andrey.nering@gmail.com>
     description: Simple task runner written in Go
     license: MIT
@@ -63,13 +63,13 @@ nfpms:
         dst: /usr/local/share/zsh/site-functions/_task
 
 brews:
-  - name: go-task
+  - name: michaelhenkel
     description: Task runner / simpler Make alternative written in Go
     license: MIT
     homepage: https://taskfile.dev
     folder: Formula
     tap:
-      owner: go-task
+      owner: michaelhenkel
       name: homebrew-tap
     test:
       system "#{bin}/task", "--help"
