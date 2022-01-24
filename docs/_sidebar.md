@@ -5,4 +5,4 @@
 - [Community](community.md)
 - [Releasing Task](releasing_task.md)
 - [Donate](donate.md)
-- [GitHub](https://github.com/michaelhenkel/task)
+- [GitHub](https://github.com/go-task/task)

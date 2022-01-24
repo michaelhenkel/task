@@ -3,4 +3,4 @@
   recommended to open an issue with the feature request first
 * Documentation contributions are as important as code contributions
 
-[issues]: https://github.com/michaelhenkel/task/issues
+[issues]: https://github.com/go-task/task/issues

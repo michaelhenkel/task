@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/michaelhenkel/task/v3/internal/logger"
-	"github.com/michaelhenkel/task/v3/internal/status"
-	"github.com/michaelhenkel/task/v3/taskfile"
+	"github.com/go-task/task/v3/internal/logger"
+	"github.com/go-task/task/v3/internal/status"
+	"github.com/go-task/task/v3/taskfile"
 	"github.com/radovskyb/watcher"
 )
 

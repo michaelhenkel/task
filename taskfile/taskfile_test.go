@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
 
-	"github.com/michaelhenkel/task/v3/taskfile"
+	"github.com/go-task/task/v3/taskfile"
 )
 
 func TestCmdParse(t *testing.T) {

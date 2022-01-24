@@ -3,8 +3,8 @@ package task
 import (
 	"fmt"
 
-	"github.com/michaelhenkel/task/v3/internal/hash"
-	"github.com/michaelhenkel/task/v3/taskfile"
+	"github.com/go-task/task/v3/internal/hash"
+	"github.com/go-task/task/v3/taskfile"
 )
 
 func (e *Executor) GetHash(t *taskfile.Task) (string, error) {

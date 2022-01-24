@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/michaelhenkel/task/v3/args"
-	"github.com/michaelhenkel/task/v3/taskfile"
+	"github.com/go-task/task/v3/args"
+	"github.com/go-task/task/v3/taskfile"
 )
 
 func TestArgsV3(t *testing.T) {

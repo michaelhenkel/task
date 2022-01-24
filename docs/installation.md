@@ -12,7 +12,7 @@ If you're on macOS or Linux and have [Homebrew][homebrew] installed, getting
 Task is as simple as running:
 
 ```bash
-brew install michaelhenkel/tap/michaelhenkel
+brew install go-task/tap/go-task
 ```
 
 #### **Snap**
@@ -58,7 +58,7 @@ If you're on NixOS or have Nix installed
 you can install Task from [nixpkgs](https://github.com/NixOS/nixpkgs):
 
 ```cmd
-nix-env -iA nixpkgs.michaelhenkel
+nix-env -iA nixpkgs.go-task
 ```
 
 This installation method is community owned. After a new release of Task, it
@@ -123,19 +123,19 @@ First, make sure you have [Go][go] properly installed and setup.
 You can easily install the latest release globally by running:
 
 ```bash
-go install github.com/michaelhenkel/task/v3/cmd/task@latest
+go install github.com/go-task/task/v3/cmd/task@latest
 ```
 
 Or you can install into another directory:
 
 ```bash
-env GOBIN=/bin go install github.com/michaelhenkel/task/v3/cmd/task@latest
+env GOBIN=/bin go install github.com/go-task/task/v3/cmd/task@latest
 ```
 
 If using Go 1.15 or earlier, instead use:
 
 ```bash
-env GO111MODULE=on go get -u github.com/michaelhenkel/task/v3/cmd/task@latest
+env GO111MODULE=on go get -u github.com/go-task/task/v3/cmd/task@latest
 ```
 
 > For CI environments we recommend using the [Install Script](#get-the-binary)
@@ -147,7 +147,7 @@ env GO111MODULE=on go get -u github.com/michaelhenkel/task/v3/cmd/task@latest
 [go]: https://golang.org/
 [snapcraft]: https://snapcraft.io/task
 [homebrew]: https://brew.sh/
-[installscript]: https://github.com/michaelhenkel/task/blob/master/install-task.sh
-[releases]: https://github.com/michaelhenkel/task/releases
+[installscript]: https://github.com/go-task/task/blob/master/install-task.sh
+[releases]: https://github.com/go-task/task/releases
 [godownloader]: https://github.com/goreleaser/godownloader
 [scoop]: https://scoop.sh/

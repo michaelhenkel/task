@@ -14,10 +14,10 @@ import (
 	"github.com/spf13/pflag"
 	"mvdan.cc/sh/v3/syntax"
 
-	"github.com/michaelhenkel/task/v3"
-	"github.com/michaelhenkel/task/v3/args"
-	"github.com/michaelhenkel/task/v3/internal/logger"
-	"github.com/michaelhenkel/task/v3/taskfile"
+	"github.com/go-task/task/v3"
+	"github.com/go-task/task/v3/args"
+	"github.com/go-task/task/v3/internal/logger"
+	"github.com/go-task/task/v3/taskfile"
 )
 
 var (
